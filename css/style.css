@@ -1,0 +1,29 @@
+.alert {
+    display: block !important;
+    position: fixed;
+    bottom: 0;
+    padding: 3%;
+    text-align: left;
+    right: -30%;
+    z-index: 10;
+    min-height: 10vh;
+    min-width: 20%;
+    color: white;
+    font-size: 18px !important;
+    transition: 0.5s ease-in-out;
+}
+
+.alert-success {
+    border-top: 6px solid rgb(1, 78, 1);
+    background: rgb(1, 110, 1) !important;
+}
+
+.alert-danger {
+    border-top: 6px solid rgb(107, 1, 1);
+    background: rgb(151, 1, 1) !important;
+}
+
+.alert.alert-active {
+    right: 0 !important;
+    transition: 0.5s;
+}

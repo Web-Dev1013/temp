@@ -1,0 +1,32 @@
+.content{
+    margin-top: -40px;
+    box-shadow: 2px 2px 20px #666666;
+    border-radius: 20px;
+}
+.navbar{
+    box-shadow: 2px 0px 4px #151515 !important;
+}
+input[type=radio]{
+    width: 20px !important;
+    height: 20px !important;
+    vertical-align: middle;
+    transition: 0.8s;
+}
+.tab{
+    display: none;
+}
+.tab-active{
+    display: block !important;
+}
+.bg-sp{
+    background: #1c768f !important;
+}
+.question{
+    opacity: 0;
+    transition: 0.8s;
+    display: none;
+}
+.q-action{
+    opacity: 1 !important;
+    transition: 0.8s;
+}
