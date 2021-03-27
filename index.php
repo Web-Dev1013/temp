@@ -11,7 +11,6 @@ session_start();
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <title>Test</title>
   <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/auth.css" />
@@ -20,6 +19,7 @@ session_start();
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <script type="text/javascript" src="./js/auth.js"></script>
   <script type="text/javascript" src="./js/main.js"></script>
   <script type="text/javascript" src="./js/queries.js"></script>

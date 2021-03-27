@@ -30,20 +30,37 @@ if ($_POST['type'] == "sign_up") {
   }
 }
 
-if($_POST["type"] == "sign_in"){
+if ($_POST["type"] == "sign_in") {
   $login_email = $_POST["login_email"];
   $login_pass = md5($_POST["login_pass"]);
-  try{
+  try {
     $stmt = $conn->prepare("SELECT * from `user` WHERE email = '$login_email' AND password = '$login_pass'");
     $stmt->execute();
-    if($stmt->rowCount()>0){
+    if ($stmt->rowCount() > 0) {
       $_SESSION["user"] = $login_email;
       echo "success";
-    }else{
+    } else {
       echo "no_user";
     }
-  }catch(PDOException $e){
-    echo "failed".$e->getMessage();
+  } catch (PDOException $e) {
+    echo "failed" . $e->getMessage();
+  }
+}
+
+if ($_POST["type"] == "user_info") {
+  $user = $_SESSION["user"];
+  $fullName = $_POST["fullName"];
+  $gender = $_POST["gender"];
+  $place = $_POST["place"];
+  $birthday = $_POST["birthday"];
+  $phone = $_POST["phone"];
+  $address = $_POST["address"];
+  try {
+    $stmt = $conn->prepare("INSERT INTO user_info SET userId=(SELECT id FROM `user` WHERE email='$user'), fullName='$fullName', gender='$gender', place='$place', birthday='$birthday', phone='$phone',`address`='$address'");
+    $stmt->execute();
+    echo "success";
+  } catch (PDOException $e) {
+    echo "failed" . $e->getMessage();
   }
 }
 

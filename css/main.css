@@ -1,4 +1,4 @@
-.content{
+.content, .user-info{
     margin-top: -40px;
     box-shadow: 2px 2px 20px #666666;
     border-radius: 20px;
@@ -29,4 +29,21 @@ input[type=radio]{
 .q-action{
     opacity: 1 !important;
     transition: 0.8s;
+}
+.answer_title{
+    position: absolute;
+    margin-top: -15px;
+    font-size: 12px;
+}
+#answer{
+    line-height: 2;
+}
+i:hover{
+    cursor: pointer;
+}
+.sub-title{
+    font-size: 14px;
+}
+input[type=radio]:focus{
+    box-shadow: none;
 }
